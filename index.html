@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Happy tours and travels</title>
+</head>
+
+<body>
+    <div id="success" class="alert alert-success alert-dismissible fade" role="alert">
+        <strong>Holy guacamole!</strong> You travel request has been successfully submitted.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <div id="failure" class="alert alert-danger alert-dismissible fade" role="alert">
+        <strong>Error!</strong> You travel request has not been accepted due to errors.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <div class="container">
+        <h1>Welcome to Happy tours and travels!</h1>
+        <form class="row g-3">
+            <div class="row g-3">
+                <div class="col">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" id="firstName" class="form-control" placeholder="First name"
+                        aria-label="First name">
+                    <small id="firstNameValid" class="form-text text-danger invalid-feedback">
+                        Your first name should start with capital letter and should not start with a number
+                    </small>
+                </div>
+                <div class="col">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" id="lastName" class="form-control" placeholder="Last name"
+                        aria-label="Last name">
+                    <small id="lastNameValid" class="form-text text-danger invalid-feedback">
+                        Your last name should start with capital letter and should not start with a number
+                    </small>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" class="form-control" id="email" placeholder="email@gmail.com">
+                <small id="emailValid" class="form-text text-danger invalid-feedback">
+                    Your email must be a valid email in the format like email@gmail.com
+                </small>
+            </div>
+            <div class="col-md-6">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="text" class="form-control" id="phone" placeholder="Contact Number">
+                <small id="phoneValid" class="form-text text-danger invalid-feedback">
+                    Enter a valid 10 digit contact number
+                </small>
+            </div>
+            <div class="col-12">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="Address">
+            </div>
+            <div class="col-md-6">
+                <label for="members" class="form-label">Number of Members</label>
+                <input type="text" class="form-control" id="members" placeholder="Enter number of members">
+            </div>
+            <div class="col-md-4">
+                <label for="car" class="form-label">Car</label>
+                <select id="car" class="form-select">
+                    <option></option>
+                    <option>Honda Amaze</option>
+                    <option>Ford Ecosport</option>
+                    <option>Maruti Ertiga</option>
+                    <option>Maruti Swift Dzire</option>
+                    <option>Mahindra Marazzo</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="zip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="zip">
+            </div>
+            <div class="col-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" placeholder="Any Message" cols="10" rows="3"></textarea>
+                <textarea class="form-control" id="message" placeholder="Any Message" cols="10" rows="3"></textarea>
+            </div>
+            <div class="col-12">
+                <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
